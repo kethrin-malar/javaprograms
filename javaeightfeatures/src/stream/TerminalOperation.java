@@ -2,6 +2,7 @@ package stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class TerminalOperation {
@@ -16,6 +17,19 @@ public class TerminalOperation {
 		List<String> name = Arrays.asList("John", "Alice", "Bob");
 		List<String> collectedNames = name.stream().collect(Collectors.toList());
 		System.out.println(collectedNames); // Output: [John, Alice, Bob]
+
+
+		
+		
+		//anyMatch(): Checks if any element matches a predicate.
+		List<Integer> numbers = Arrays.asList(1, 7, 3, 9, 5);
+		boolean hasEvenNumber = numbers.stream().anyMatch(n -> n % 2 == 0);
+		System.out.println(hasEvenNumber);
+		
+		//findAny(): Finds any element in the stream.
+		List<String> nam = Arrays.asList("John", "Alice", "Bob");
+		Optional<String> any = nam.stream().findAny();
+		any.ifPresent(System.out::println); 
 
 
 	}
