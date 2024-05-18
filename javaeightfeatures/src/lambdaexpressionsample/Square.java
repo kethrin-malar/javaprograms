@@ -1,4 +1,4 @@
-package functionalinterface;
+package lambdaexpressionsample;
 
 
 interface Square {
