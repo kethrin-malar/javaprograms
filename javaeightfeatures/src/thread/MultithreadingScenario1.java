@@ -1,8 +1,10 @@
+package thread;
 
-public class MultithreadingScenario2 {
-	class Student {
-        private  String name;	
-        //private static String name; // static variable
+public class MultithreadingScenario1 {
+
+    // Define the Student class
+    class Student {
+       private String name; // Instance variable
 
         // Constructor to set the name
         public Student(String name) {
@@ -16,15 +18,16 @@ public class MultithreadingScenario2 {
     }
 
     public static void main(String[] args) {
-        
-        MultithreadingScenario2 obj = new MultithreadingScenario2();
+        // Create an instance of the outer class
+        MultithreadingScenario1 obj = new MultithreadingScenario1();
+
+        // Now, create instances of the inner class using the outer instance
         Student s1 = obj.new Student("Reena");
         Student s2 = obj.new Student("Malar");
         Student s3 = obj.new Student("Pratheeksha");
 
         // Creating threads with Runnable implementation
         Thread thread1 = new Thread(new Runnable() {
-            
             public void run() {
                 System.out.println("Thread 1: " + s1.getName());
             }
@@ -33,14 +36,14 @@ public class MultithreadingScenario2 {
         Thread thread2 = new Thread(new Runnable() {
             
             public void run() {
-                System.out.println("Thread 2: " + s2.getName());
+                System.out.println("Thread 2: " + s1.getName());
             }
         });
 
         Thread thread3 = new Thread(new Runnable() {
             
             public void run() {
-                System.out.println("Thread 3: " + s3.getName());
+                System.out.println("Thread 3: " + s1.getName());
             }
         });
 
@@ -50,6 +53,3 @@ public class MultithreadingScenario2 {
         thread3.start();
     }
 }
-
-
-
