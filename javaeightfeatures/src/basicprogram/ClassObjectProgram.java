@@ -1,10 +1,10 @@
 package basicprogram;
 
-public class classobjectprogram {
+public class ClassObjectProgram {
 	int x = 5;
 
 	public static void main(String[] args) {
-		classobjectprogram myObj = new classobjectprogram();
+		ClassObjectProgram myObj = new ClassObjectProgram();
 		System.out.println(myObj.x);
 	}
 }

@@ -1,12 +1,12 @@
 package basicprogram;
 
 
-public class employeeaggregationsample {  
+public class EmployeeAggregationsample {  
 int id;  
 String name;  
 Address address;  
   
-public employeeaggregationsample(int id, String name,Address address) {  
+public EmployeeAggregationsample(int id, String name,Address address) {  
     this.id = id;  
     this.name = name;  
     this.address=address;  
@@ -21,8 +21,8 @@ public static void main(String[] args) {
 Address address1=new Address("gzb","UP","india");  
 Address address2=new Address("gno","UP","india");  
   
-employeeaggregationsample e=new employeeaggregationsample(111,"varun",address1);  
-employeeaggregationsample e2=new employeeaggregationsample(112,"arun",address2);  
+EmployeeAggregationsample e=new EmployeeAggregationsample(111,"varun",address1);  
+EmployeeAggregationsample e2=new EmployeeAggregationsample(112,"arun",address2);  
       
 e.display();  
 e2.display();  
