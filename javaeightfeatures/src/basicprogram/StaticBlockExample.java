@@ -1,31 +1,17 @@
 package basicprogram;
 
-
 public class StaticBlockExample {
+	static int a = 10; // static variable
+	static int b;
+	// static block
+	static {
+		System.out.println("Static block initialized.");
+		b = a * 4;
+	}
 
-    // Static variable
-    static int number;
-
-    // Static block
-    static {
-        number = 10;
-        System.out.println("Static block executed. Number is set to: " + number);
-    }
-
-    // Constructor
-    public StaticBlockExample() {
-        System.out.println("Constructor called.");
-    }
-
-    // Main method
-    public static void main(String[] args) {
-        System.out.println("Main method started.");
-        
-        // Creating an instance of the class
-        StaticBlockExample example = new StaticBlockExample();
-      
-        
-        System.out.println("Main method ended.");
-    }
+	public static void main(String[] args) {
+		System.out.println("from main");
+		System.out.println("Value of a : " + a);
+		System.out.println("Value of b : " + b);
+	}
 }
-
