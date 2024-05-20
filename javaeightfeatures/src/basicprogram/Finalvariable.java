@@ -2,7 +2,7 @@ package basicprogram;
 
 public class Finalvariable {
 
-	final int speedlimit=0;// final variable
+	 final int speedlimit=0;// final variable
 
 	void run() {
 		int speedlimit=70;  
