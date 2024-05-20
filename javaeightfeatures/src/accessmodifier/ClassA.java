@@ -1,4 +1,4 @@
-package AccessModifier;
+package accessmodifier;
 
 public class ClassA {
 	

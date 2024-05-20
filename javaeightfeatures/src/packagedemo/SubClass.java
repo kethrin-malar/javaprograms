@@ -1,6 +1,6 @@
 package packagedemo;
 
-import AccessModifier.ClassA;
+import accessmodifier.ClassA;
 
 public class SubClass extends ClassA {
 
