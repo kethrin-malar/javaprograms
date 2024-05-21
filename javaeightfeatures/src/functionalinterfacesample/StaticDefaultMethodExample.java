@@ -11,6 +11,10 @@ interface TestInterface
     { 
       System.out.println("Default Method Executed"); 
     } 
+    
+    static void message() {
+    	System.out.println("this is a static method example....");
+    }
 } 
   
 class StaticDefaultMethodExample implements TestInterface 
@@ -28,5 +32,7 @@ class StaticDefaultMethodExample implements TestInterface
   
         // default method executed 
         d.show(); 
+        
+        TestInterface.message();
     } 
 } 
