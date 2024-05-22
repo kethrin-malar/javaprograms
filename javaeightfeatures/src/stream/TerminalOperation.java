@@ -16,12 +16,10 @@ public class TerminalOperation {
 		//collect(): Collects elements into a collection using a collector.
 		List<String> name = Arrays.asList("John", "Alice", "Bob");
 		List<String> collectedNames = name.stream().collect(Collectors.toList());
-		System.out.println(collectedNames); // Output: [John, Alice, Bob]
+		System.out.println(collectedNames);
 
 
-		
-		
-		//anyMatch(): Checks if any element matches a predicate.
+        //anyMatch(): Checks if any element matches a predicate.
 		List<Integer> numbers = Arrays.asList(1, 7, 3, 9, 5);
 		boolean hasEvenNumber = numbers.stream().anyMatch(n -> n % 2 == 0);
 		System.out.println(hasEvenNumber);

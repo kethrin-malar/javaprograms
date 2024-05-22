@@ -53,7 +53,8 @@ public class StreamOperations {
         List<Integer> limitedNumbers = numbers.stream()
             .limit(5)
             .collect(Collectors.toList());
-        System.out.println("Limited: " + limitedNumbers); 
+        System.out.println("Limited: " + limitedNumbers);
+        
         // skip(): Skips the first n elements of the stream.
         List<Integer> skippedNumbers = numbers.stream()
             .skip(5)
