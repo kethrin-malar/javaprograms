@@ -10,7 +10,7 @@ LinkedHashSet Add method has been inherited from class java.util.HashSet.
 */
 public class LinkedHashSetsample {
 	public static void main(String[] args) {
-		LinkedHashSet ls = new LinkedHashSet();
+		LinkedHashSet<Object> ls = new LinkedHashSet<>();
 
 		ls.add(10);
 		ls.add(100.0f);

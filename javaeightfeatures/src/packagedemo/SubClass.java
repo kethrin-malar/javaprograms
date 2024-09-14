@@ -1,5 +1,7 @@
 package packagedemo;
 
+import java.util.Arrays;
+
 import accessmodifier.ClassA;
 
 public class SubClass extends ClassA {
@@ -11,7 +13,9 @@ public class SubClass extends ClassA {
 	        System.out.println("publicVar: " + publicVar); // Accessible
 	    }
 	 public static void main(String[] args) {
-		 ClassA obj = new ClassA();
+		 SubClass obj = new SubClass();
 		 obj.display();		 
 	 }
 }
+
+

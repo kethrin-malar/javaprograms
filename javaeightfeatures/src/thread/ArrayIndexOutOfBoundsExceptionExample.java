@@ -5,8 +5,8 @@ public class ArrayIndexOutOfBoundsExceptionExample {
 	        
 	        try{    
 	             int a[]=new int[5];    
-	             a[5] = 10;  // This will trigger ArrayIndexOutOfBoundsException
-	             //a[4]=10;
+	             //a[] = 10;  // This will trigger ArrayIndexOutOfBoundsException
+	             a[4]=10;
 	            }    
 	            
 	            catch(ArrayIndexOutOfBoundsException e)  
